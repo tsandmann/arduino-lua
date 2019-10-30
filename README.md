@@ -11,6 +11,12 @@ This Arduino library provides the [lua](https://www.lua.org/) 5.3.4 scripting en
 
 Download the content of this Github repository as a ZIP archive by clicking on *Clone or download* then *Download ZIP*. Follow the instructions on [installing additional Arduino libraries](https://www.arduino.cc/en/Guide/Libraries#toc4) and navigate to the file downloaded previously.
 
+## Resources used (minimal sketch, 4MB (no spiffs)
+
+Sketch uses 327776 bytes (31%) of program storage space. Maximum is 1044464 bytes.
+Global variables use 31276 bytes (38%) of dynamic memory, leaving 50644 bytes for local variables. Maximum is 81920 bytes.
+
+
 ## Arduino sketch examples
 
 After installing the library, some sketch examples are available from the *File* menu, then *Examples* and finally under *ESP8266-Arduino-Lua*. The examples include **ExecuteScriptFromSerial** which takes a lua script from the serial line and executes it:
