@@ -18,22 +18,22 @@ static int lua_wrapper_delay(lua_State *lua_state) {
   int a = luaL_checkinteger(lua_state, 1);
   delay(a);
 }
-/*
+
 static int lua_wrapper_print(lua_State *lua_state) {
   String a = String(luaL_checkstring(lua_state, 1));
   Serial.println(a);
 }
-*/
+
 static int lua_wrapper_millis(lua_State *lua_state) {
   lua_pushnumber(lua_state, (lua_Number) millis());
   return 1;
 }
 
 void setup() {
-  lua.Lua_register("pinMode", (const lua_CFunction) &lua_wrapper_pinMoe);
+  lua.Lua_register("pinMode", (const lua_CFunction) &lua_wrapper_pinMode);
   lua.Lua_register("digitalWrite", (const lua_CFunction) &lua_wrapper_digitalWrite);
   lua.Lua_register("delay", (const lua_CFunction) &lua_wrapper_delay);
-  //lua.Lua_register("print", (const lua_CFunction) &lua_wrapper_print);
+  lua.Lua_register("print", (const lua_CFunction) &lua_wrapper_print);
   lua.Lua_register("millis", (const lua_CFunction) &lua_wrapper_millis);
   Serial.begin(115200);
 }
