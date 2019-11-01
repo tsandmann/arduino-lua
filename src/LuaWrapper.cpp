@@ -1,16 +1,7 @@
 #include "LuaWrapper.h"
 
-extern "C" {
-
-  static int lua_wrapper_print(lua_State *lua) {
-    String a = String(luaL_checkstring(lua, 1));
-    Serial.println(a);
-  }
-}
-
 LuaWrapper::LuaWrapper() {
   _state = luaL_newstate();
-  lua_register(_state, "print", lua_wrapper_print);
 }
 
 String LuaWrapper::Lua_dostring(const String *script) {
