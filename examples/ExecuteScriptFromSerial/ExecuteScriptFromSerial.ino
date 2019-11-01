@@ -2,30 +2,30 @@
 
 LuaWrapper lua;
 
-static int lua_wrapper_pinMode(lua_State *lua) {
-  int a = luaL_checkinteger(lua, 1);
-  int b = luaL_checkinteger(lua, 2);
+static int lua_wrapper_pinMode(lua_State *lua_state) {
+  int a = luaL_checkinteger(lua_state, 1);
+  int b = luaL_checkinteger(lua_state, 2);
   pinMode(a, b);
 }
 
-static int lua_wrapper_digitalWrite(lua_State *lua) {
-  int a = luaL_checkinteger(lua, 1);
-  int b = luaL_checkinteger(lua, 2);
+static int lua_wrapper_digitalWrite(lua_State *lua_state) {
+  int a = luaL_checkinteger(lua_state, 1);
+  int b = luaL_checkinteger(lua_state, 2);
   digitalWrite(a, b);
 }
   
-static int lua_wrapper_delay(lua_State *lua) {
-  int a = luaL_checkinteger(lua, 1);
+static int lua_wrapper_delay(lua_State *lua_state) {
+  int a = luaL_checkinteger(lua_state, 1);
   delay(a);
 }
 /*
-static int lua_wrapper_print(lua_State *lua) {
-  String a = String(luaL_checkstring(lua, 1));
+static int lua_wrapper_print(lua_State *lua_state) {
+  String a = String(luaL_checkstring(lua_state, 1));
   Serial.println(a);
 }
 */
-static int lua_wrapper_millis(lua_State *lua) {
-  lua_pushnumber(lua, (lua_Number) millis());
+static int lua_wrapper_millis(lua_State *lua_state) {
+  lua_pushnumber(lua_state, (lua_Number) millis());
   return 1;
 }
 
