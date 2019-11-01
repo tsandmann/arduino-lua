@@ -10,7 +10,13 @@ Global variables use 31276 bytes (38%) of dynamic memory, leaving 50644 bytes fo
 
 ## Arduino sketch examples
 
-After installing the library, some sketch examples are available from the *File* menu, then *Examples* and finally under *ESP8266-Arduino-Lua*. The examples include **ExecuteScriptFromSerial** which takes a lua script from the serial line and executes it:
+After installing the library, some sketch examples are available from the *File* menu, then *Examples* and finally under *ESP8266-Arduino-Lua*. The examples include **ExecuteScriptFromSerial** which takes a lua script from the serial line and executes it. As an example, the following standard Arduino functions are available in lua scripts as bindings:
+
+. pinMode()
+. digitalWrite()
+. delay()
+. millis()
+. print()
 
 ```
 # Enter the lua script and press Control-D when finished:
