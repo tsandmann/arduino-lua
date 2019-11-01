@@ -1,6 +1,6 @@
 # ESP8266 Arduino Lua
 
-This Arduino library provides the [lua](https://www.lua.org/) 5.3.5 scripting engine for ESP8266 sketches. This allows dynamic execution of code on Arduino without having to compile and flash a new firmware. 
+This Arduino library provides the [lua](https://www.lua.org/) 5.3.5 (release) scripting engine for ESP8266 sketches. This allows dynamic execution of code on Arduino without having to compile and flash a new firmware. 
 
 ## Used Resources (minimal sketch, 4MB (no spiffs))
 
@@ -23,21 +23,15 @@ My first test!
 print("Current uptime: "..millis())
 # Executing script:
 Current uptime: 159926.0
-```
 
-## Lua script examples
 
-The lua language syntax is described in the [reference manual](https://www.lua.org/manual/). It is extended by the Arduino functions listed above.
-
-### Hello world
-
-```
+# Enter the lua script and press Control-D when finished:
 print("Hello world!")
-```
+# Executing script:
+Hello world!
 
-### Blinking LED
 
-```
+# Enter the lua script and press Control-D when finished:
 pinLED = 2
 period = 500
 pinMode(pinLED, OUTPUT)
@@ -50,4 +44,6 @@ do
   digitalWrite(pinLED, HIGH)
   delay(period)
 end
+# Executing script:
+
 ```
