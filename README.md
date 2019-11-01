@@ -45,5 +45,6 @@ do
   delay(period)
 end
 # Executing script:
-
+LED on
+LED off
 ```
