@@ -32,7 +32,7 @@ My first test!
 
 
 # Enter the lua script and press Control-D when finished-
-print("Current uptime: "..millis())
+print("Current uptime: " .. millis())
 # Executing script:
 Current uptime: 159926.0
 
