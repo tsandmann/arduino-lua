@@ -61,3 +61,23 @@ end
 LED on
 LED off
 ```
+
+## Arduino IDE Library examples
+``` 
+#include <LuaWrapper.h>
+
+LuaWrapper lua;
+
+void setup() {
+  Serial.begin(115200);
+  String script = String("print('Hello world!')");
+  Serial.println(lua.Lua_dostring(&script));
+}
+
+void loop() {
+
+}
+```
+
+
+
