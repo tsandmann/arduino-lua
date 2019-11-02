@@ -2,6 +2,13 @@
 
 This Arduino library provides the [lua](https://www.lua.org/) 5.3.5 (release) scripting engine for ESP8266/ESP32 sketches. This allows dynamic execution of code on Arduino without having to compile and flash a new firmware. 
 
+Along with the Lua 5.3.5 Core the following Lua standard libraries are included:
+
+- base (print(), tostring(), tonumber(), etc.)
+- math
+- table (insert(), sort(), remove(), ...)
+- string (len(), match(), ...)
+
 ## Used Resources (ESP8266 minimal sketch, 4MB (no spiffs))
 
 Sketch uses 327776 bytes (31%) of program storage space. Maximum is 1044464 bytes.
@@ -16,7 +23,7 @@ After installing the library, some sketch examples are available from the *File*
 - digitalWrite()
 - delay()
 - millis()
-- print()
+- print() *(only builtin binding)*
 
 ```
 # Enter the lua script and press Control-D when finished:
