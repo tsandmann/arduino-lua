@@ -14,8 +14,7 @@ Along with the Lua 5.3.5 Core the following Lua standard libraries are included:
 Sketch uses 327776 bytes (31%) of program storage space. Maximum is 1044464 bytes.
 Global variables use 31276 bytes (38%) of dynamic memory, leaving 50644 bytes for local variables. Maximum is 81920 bytes.
 
-
-## Arduino sketch examples
+##  Sample sketch example: ExecuteScriptFromSerial.ino
 
 After installing the library, some sketch examples are available from the *File* menu, then *Examples* and finally under *ESP-Arduino-Lua*. The examples include **ExecuteScriptFromSerial** which takes a lua script from the serial line and executes it. As an example, the following standard Arduino functions are available in lua scripts as bindings:
 
@@ -62,7 +61,7 @@ LED on
 LED off
 ```
 
-## Arduino IDE Library examples
+## Arduino IDE Library example: HelloWorld.ino
 ``` 
 #include <LuaWrapper.h>
 
