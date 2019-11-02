@@ -78,5 +78,6 @@ void loop() {
 }
 ```
 
-
+## The Lua Language:
+[Lua 5.3 Reference Manual](https://www.lua.org/manual/5.3/)
 
