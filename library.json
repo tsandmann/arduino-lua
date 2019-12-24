@@ -1,0 +1,17 @@
+{
+  "name": "arduino-lua",
+  "keywords": "lua",
+  "description": "Lua scripting engine for the Arduino framework",
+  "homepage": "https://github.com/sfranzyshen/ESP-Arduino-Lua",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tsandmann/arduino-lua"
+  },
+  "version": "0.0.50",
+  "authors": {
+    "name": "François Dugast <1050329+fdu@users.noreply.github.com>",
+    "url": "https://github.com/sfranzyshen/ESP-Arduino-Lua"
+  },
+  "frameworks": "*",
+  "platforms": "*"
+}
